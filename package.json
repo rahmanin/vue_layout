@@ -2,14 +2,19 @@
   "name": "vue_layout",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "12.19.0"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "heroku-postbuild": "yarn && yarn build"
+    "heroku-postbuild": "yarn && yarn build",
+    "start": "node server.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "express": "^4.17.1",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
     "vue": "^2.6.11"
