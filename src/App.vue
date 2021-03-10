@@ -152,6 +152,63 @@
       p.why_choose_text Our developers have been using Ionic since its release in 2013. Currently, we work with the latest Ionic 5.x since it perfectly matches the market requirements for mobile apps. Deep expertise in other domains allows us to deliver effective solutions for any business.
       a.why_choose_btn Tell us about your project 
         span &#8594;
+
+    div.one_stop_shop_wrapper
+      h2.one_stop_shop_title One-stop-shop for mobile and web development
+      div.one_stop_shop_container
+        .one_stop_shop_block
+          img(src = "./assets/coding 1.svg")
+          div.one_stop_shop_text
+            h3 Ionic mobile app development
+            p We build cross-platform mobile apps that run on any platform using only JavaScript — the most popular programming language in the world.
+        .one_stop_shop_block
+          img(src = "./assets/web-programming 1.svg")
+          div.one_stop_shop_text
+            h3 Ionic web development
+            p Since Ionic code is reusable, we can carry out mobile and web development simultaneously, enabling us to release both web and mobile apps in the shortest time.
+
+    div.achievements_wrapper
+      h2.achievements_title Our Achievements
+      div.achievements_container
+        img(src = "./assets/image 5.svg")
+        img(src = "./assets/image 4.svg")
+        img(src = "./assets/Rectangle.svg")
+
+    div.approach_wrapper
+      div.approach_content
+        .approach_text
+          h2 We take a tailored approach to each project
+          p At Clockwise Software, we involve various professionals in each project to achieve the best results. We’re ready to guide you through the following stages of product development:
+        ul
+          li Business analysis
+          li Requirements definition
+          li Budget optimization
+          li Prototyping
+          li MVP development and launch
+          li Further product development in short iterations
+          li Product support and maintenance
+
+    div.clients_wrapper
+      h2.clients_title Our clients
+      .clients_container
+        img(src = "./assets/Knocking-1.svg")
+        img(src = "./assets/Johnson.svg")
+        img(src = "./assets/Knocking.svg")
+        img(src = "./assets/EmailMeForm.svg")
+        img(src = "./assets/rainforest_logo_gray 1.svg")
+
+    div.join_wrapper
+      .join_text
+        h2 Will you join the club of the most innovative companies?
+        p Are you ready to start developing a world-class Ionic app? Our team is ready to turn your idea into reality.
+      form.join_form
+        div.first_last_name
+          input(type="text" placeholder="First name*").name
+          input(type="text" placeholder="Last name*").name
+        input(type="email" placeholder="Email*").email
+        input(type="text" placeholder="Company").company
+        input(type="text" placeholder="Leave a request we will write you").request
+        a.send_btn Send message
 </template>
 
 <script>
@@ -580,5 +637,250 @@ export default {
   .why_choose_btn span {
     font-size: 50px;
     padding-bottom: 12px;
+  }
+
+  .one_stop_shop_wrapper {
+    max-width: 1170px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 85px;
+  }
+  .one_stop_shop_title {
+    max-width: 673px;
+    width: 100%;
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 150%;
+    text-align: center;
+    color: #33484B;
+    margin-bottom: 37px;
+  }
+  .one_stop_shop_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .one_stop_shop_block {
+    max-width: 536px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .one_stop_shop_text {
+    max-width: 420px;
+    width: 100%;
+    margin-left: 36px;
+  }
+  .one_stop_shop_text h3 {
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 160%;
+    color: #33484B;
+  }
+  .one_stop_shop_text p {
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 160%;
+    color: #33484B;
+  }
+
+  .achievements_wrapper {
+    margin-top: 89px;
+    max-width: 425px;
+    width: 100%;
+  }
+  .achievements_title {
+    max-width: 425px;
+    width: 100%;
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 150%;
+    text-align: center;
+    color: #33484B;
+    margin-bottom: 48px;
+  }
+  .achievements_container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .approach_wrapper {
+    background: #F3F7F8;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    transform: rotate(-4.63deg);
+    margin-top: 80px;
+  }
+  .approach_content {
+    display: flex;
+    max-width: 1170px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    transform: rotate(4.63deg);
+  }
+  .approach_text {
+    max-width: 487px;
+    width: 100%;
+  }
+  .approach_text h2 {
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 55px;
+    line-height: 150%;
+    color: #33484B;
+  }
+  .approach_text p {
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 160%;
+    color: #33484B;
+  }
+  .approach_content li {
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 210%;
+    display: flex;
+    align-items: center;
+    color: #33484B;
+    position: relative;
+  }
+  .approach_content li::before {
+    content: " ";
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background: #FFFFFF;
+    border: 5px solid #FEBE41;
+    box-sizing: border-box;
+    border-radius: 50%;
+    left: -62px;
+  }
+  .approach_content ul {
+    position: relative;
+  }
+  .approach_content ul::before {
+    content: " ";
+    position: absolute;
+    height: 350px;
+    width: 1px;
+    background: #33484B;
+    left: -44.5px;
+    top: 10px
+  }
+
+  .clients_wrapper {
+    max-width: 1170px;
+    width: 100%;
+    margin-top: 80px;
+  }
+  .clients_title {
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 82px;
+    text-align: center;
+    color: #33484B;
+    margin-bottom: 45px;
+  }
+  .clients_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .join_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 160px;
+    max-width: 1170px;
+    width: 100%;
+  }
+  .join_text {
+    max-width: 525px;
+    width: 100%;
+  }
+  .join_text h2 {
+    max-width: 470px;
+    width: 100%;
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 150%;
+    color: #33484B;
+    margin-bottom: 35px;
+  }
+  .join_text p{
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 43px;
+    color: #33484B;
+  }
+  .join_form {
+    display: flex;
+    flex-direction: column;
+    max-width: 534px;
+    width: 100%;
+  }
+  .first_last_name {
+    display: flex;
+    justify-content: space-between;
+  }
+  .join_form input {
+    margin-bottom: 25px;
+    background: #FCFCFC;
+    border: 1px solid #D7D7D7;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 17px
+  }
+  .name {
+    width: 255px;
+  }
+  .name, .email, .company, .request {
+    height: 50px;
+  }
+  .request {
+    height: 94px;
+    padding: 0;
+  }
+  .send_btn {
+    height: 60px;
+    max-width: 533px;
+    width: 100%;
+    background: linear-gradient(90deg, #FF7F24 0%, #FFAA37 100%);
+    border-radius: 5px;
+    color: #FCFCFC;
+    font-family: Catamaran;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 60px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: block;
   }
 </style>
