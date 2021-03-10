@@ -17,9 +17,7 @@
     "express": "^4.17.1",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
-    "vue": "^2.6.11"
-  },
-  "devDependencies": {
+    "vue": "^2.6.11",
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-eslint": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
